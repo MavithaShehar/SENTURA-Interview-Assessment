@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Home from './containers/home';
 import Contact from './containers/contact';
@@ -11,12 +11,15 @@ function App() {
     <div className="App">
       
       <Navbar/>
+
+      <div className="App__main-page-content">
       <Routes>
         <Route index path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/skills' element={<Skills />} />
       </Routes>
+      </div>
       
     </div>
   );
