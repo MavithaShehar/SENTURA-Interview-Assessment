@@ -1,9 +1,11 @@
 import React from "react";
+import Headrs from '../../componets/headers/index'
 
-const Skills=()=>{
-    return(
+const Skills = () => {
+    return (
         <div>
-         <h1>Skils Page</h1>   
+            <Headrs headerName="mavitha" ></Headrs>
+            <h1>Skils Page</h1>
         </div>
     )
 }

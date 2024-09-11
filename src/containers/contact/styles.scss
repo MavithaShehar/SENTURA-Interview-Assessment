@@ -1,0 +1,45 @@
+
+#contact-me-section{
+    position: relative;
+    width: 100%;
+   
+}
+
+.contact-me{
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 180px);
+
+    &__info{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    &__EmailBox{
+        width: 40%;
+    
+    }
+}
+
+// ul {
+//     list-style-type: none; /* Remove default bullet points */
+//     padding: 0; /* Remove default padding */
+//   }
+  
+//   li {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 10px; /* Add spacing between list items */
+//     font-size: 20px;
+//     color: #ffffff; /* White text color */
+//   }
+  
+//   .contact-item__icon {
+//     margin-right: 10px; /* Add spacing between icon and text */
+//     font-size: 24px; /* Size of the icons */
+//   }
+  

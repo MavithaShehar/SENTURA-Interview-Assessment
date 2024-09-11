@@ -1,0 +1,12 @@
+.header-contenar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+&__name{
+    color: var(--yellow-theme-main-color);
+    font-size: 45px;
+    padding: 20px;
+}
+}

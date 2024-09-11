@@ -8,8 +8,9 @@ import './styles.scss';
 const data = [
   { label: 'HOME', to: '/' },
   { label: 'ABOUT ME', to: '/about' },
-  { label: 'CONTACT', to: '/contact' },
-  { label: 'SKILLS', to: '/skills' }
+  { label: 'SKILLS', to: '/skills' },
+  { label: 'CONTACT', to: '/contact' }
+  
 ];
 
 const Navbar = () => {
