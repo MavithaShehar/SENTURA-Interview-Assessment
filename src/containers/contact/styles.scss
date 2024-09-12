@@ -1,45 +1,102 @@
-
-#contact-me-section{
-    position: relative;
-    width: 100%;
-   
-}
-
-.contact-me{
+.about-me-section__body {
     display: flex;
     flex-wrap: nowrap;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 200px);
 
-    &__info{
+    &__icons {
+        width: 40%;
+        border: 2px solid rgb(190, 224, 37);
+        padding: 10px;
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    }
+
+    &__info {
         width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-    
+        border: 2px solid rgb(195, 0, 255);
     }
 
-    &__EmailBox{
-        width: 40%;
-    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        background: #000;
+        padding: 20px;
+
+        .button {
+            margin: 10px;
+            display: inline-flex;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            text-decoration: none;
+            overflow: hidden;
+            border: var(--yellow-theme-main-color) solid 1px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s ease-out;
+            position: relative;
+            white-space: nowrap;
+
+
+            &:hover {
+                width: 100%;
+                opacity: 1;
+            
+
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                width: 60px;
+                color: #000;
+                border-radius: 50px;
+                line-height: 50px;
+                flex-shrink: 0;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+                color: var(--yellow-theme-main-color);
+                border-right: var(--yellow-theme-main-color) solid 1px;
+            }
+
+            .icon:hover{
+                color: #ffffff;
+                
+            } 
+            .icon i {
+                font-size: 25px;
+                transition: color 0.3s ease-out;
+                
+            }
+
+            span {
+                font-size: 20px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+
+                color: var(--yellow-theme-main-color);
+
+                margin: 10px;
+                opacity: 0;
+                transition: opacity 0.3s ease-out;
+            }
+
+            &:hover span {
+                opacity: 1;
+                
+            }
+        }
     }
+
 }
-
-// ul {
-//     list-style-type: none; /* Remove default bullet points */
-//     padding: 0; /* Remove default padding */
-//   }
-  
-//   li {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: 10px; /* Add spacing between list items */
-//     font-size: 20px;
-//     color: #ffffff; /* White text color */
-//   }
-  
-//   .contact-item__icon {
-//     margin-right: 10px; /* Add spacing between icon and text */
-//     font-size: 24px; /* Size of the icons */
-//   }
-  
