@@ -17,10 +17,7 @@ const Contact = () => {
       <Headrs headerName="Contact Me" />
 
       <div className="about-me-section__body">
-        <div className="about-me-section__body__info">
-          
-        </div>
-
+      
         <div className="about-me-section__body__icons">
 
           <div className="wrapper">
@@ -61,6 +58,11 @@ const Contact = () => {
             </a>
           </div>
         </div>
+
+        <div className="about-me-section__body__info">
+          
+        </div>
+        
       </div>
     </main>
   );
