@@ -19,7 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 80px; 
+            gap: 80px;
 
             &__con {
                 display: flex;
@@ -30,8 +30,10 @@
                     color: var(--yellow-theme-sub-tex-color);
                     font-size: 15px;
                     margin-top: 5px;
-                    text-shadow: 1px 0 100px rgb(13, 127, 233);
-                    font-family: "Nunito", sans-serif;
+                    font-family: "Raleway", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
                 }
             }
         }
