@@ -29,6 +29,7 @@ const Contact = () => {
             ))}
 
           </div>
+          
         </div>
 
         <div className="about-me-section__body__info">
