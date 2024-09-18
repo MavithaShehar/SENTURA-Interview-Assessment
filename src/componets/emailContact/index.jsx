@@ -12,10 +12,11 @@ export const ContactUs = () => {
       .sendForm('service_rlixk7r', 'template_2diisbg', form.current, 'Sl5BEd3bXFPemFybc') 
       .then(
         () => {
-          console.log('SUCCESS!');
+          window.alert('SUCCESS!');
+          form.current.reset(); 
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          window.alert('FAILED...', error.text);
         },
       );
   };

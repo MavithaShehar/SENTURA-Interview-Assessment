@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './styles.scss';
 import Headrs from '../../componets/headers/index';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub } from 'react-icons/fa';
@@ -6,17 +6,25 @@ import { SiFigma, SiSpringboot, SiMongodb, SiMysql, SiExpress, SiTypescript, SiP
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiJava } from 'react-icons/di';
 
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 const Skills = () => {
+
+    useEffect(()=>{
+        Aos.init({duration:1000});
+    },[])
+
     return (
         <div className="skills-section">
             <Headrs headerName="My Skills" />
 
-            <div className="skills-section__items">
+            <div data-aos="zoom-in-up" className="skills-section__items">
                 
-                <div className="skills-section__items__lang">
+                <div  className="skills-section__items__lang">
 
-                    <div className="skills-section__items__lang__con"> 
-                    <DiJava size={60} color="red" title="Java" />
+                    <div   className="skills-section__items__lang__con"> 
+                    <DiJava  size={60} color="red" title="Java" />
                     <h1>java</h1>
                     </div>
 
@@ -117,7 +125,7 @@ const Skills = () => {
                     <h1>GitHub</h1> 
                     </div>
 
-                    <div className="skills-section__items__tools__con">
+                    <div data-aos="zoom-in" className="skills-section__items__tools__con">
                     <SiFigma size={50} color="#F24E1E" title="Figma" />
                     <h1>Figma</h1>
                     </div>

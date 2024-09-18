@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import './styles.scss';
-import logo from "../../assets/imgs/me.png";
+import logo from "../../assets/imgs/cover_img.jpeg";
 
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
             </div>
 
             <div className="home__my-image">
-                <img src={logo} alt="My Logo" /> 
+                <img style={{width:400 ,height:440}} src={logo} alt="My Logo" /> 
             </div>
 
             <div className="home__text-wrapper">

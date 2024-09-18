@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Headrs from '../../componets/headers/index';
 import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+import { Animate } from "react-simple-animate";
 
 import img01 from "../../assets/imgs/img01.jpg";
 import img02 from "../../assets/imgs/img02.jpeg";
@@ -16,6 +17,8 @@ import img05 from "../../assets/imgs/img05.jpg";
 import img06 from "../../assets/imgs/img06.jpeg";
 import img07 from "../../assets/imgs/img07.jpeg";
 
+import Education from '../../componets/education & experience/education';
+import Experience from '../../componets/education & experience/experience';
 const About = () => {
     const slides = [
         { img: img01, topic: "Nature 1" },
@@ -32,21 +35,30 @@ const About = () => {
             <Headrs headerName="About Me" />
 
             <div className="about-me">
+
                 <div className="about-me__info">
-                    <h1>
-                        Hello, I am Shehar Mavitha Kaluarachchi <br />
-                        I began my Software Engineer life in 2022. <br />
-                        I've spent most of my waking hours for the last few years designing, <br />
-                        programming, and operating websites. <br />
-                        I have acquired the skills and knowledge necessary to <br />
-                        make your project a success. <br />
-                        I enjoy every step of the design process <br /> from discussion to collaboration.
-                    </h1>
+
+                    <Animate
+                        play
+                        duration={0.8}
+                        start={{ transform: "translateX(-550px)" }}
+                        end={{ transform: "translateX(0px)" }}
+                    >
+                        <h1>
+                            Hello, I am Shehar Mavitha Kaluarachchi <br />
+                            I began my Software Engineer life in 2022. <br />
+                            I've spent most of my waking hours for the last few years designing, <br />
+                            programming, and operating websites. <br />
+                            I have acquired the skills and knowledge necessary to <br />
+                            make your project a success. <br />
+                            I enjoy every step of the design process <br /> from discussion to collaboration.
+                        </h1>
+                    </Animate>
+
                 </div>
 
                 <div className="about-me__gallery">
-                  
-                
+
                     <Swiper
                         effect={'flip'}
                         grabCursor={true}
@@ -54,7 +66,7 @@ const About = () => {
                         navigation={true}
                         modules={[EffectFlip, Pagination, Navigation]}
                         className="mySwiper"
-                      
+
                     >
                         {slides.map((slide, index) => (
                             <SwiperSlide key={index}>
@@ -64,6 +76,12 @@ const About = () => {
                     </Swiper>
                 </div>
             </div>
+
+            <div className='education-section' >
+                 <Education data-aos="zoom-in"/>
+                 <Experience/>           
+            </div>
+
         </main>
     );
 }

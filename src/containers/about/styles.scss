@@ -6,7 +6,7 @@
 .about-me {
     display: flex;
     flex-wrap: nowrap;
-    height: calc(100vh - 180px);
+    height: 100%;
 
     &__info {
         width: 60%;
@@ -16,12 +16,16 @@
         text-align: center;
 
         h1 {
-            font-size: 30px;
+            font-size: 25px;
+            font-weight: 300;
             color: var(--yellow-theme-sub-tex-color);
-            text-shadow: 1px 0 100px rgb(13, 127, 233);
+            text-shadow:
+                1px 1px 2px black,
+                0 0 2em blue;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
+
 
         }
     }
@@ -31,33 +35,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
+       
 
-        h1 {
-            color: var(--yellow-theme-main-color);
-            font-size: 30px;
-            padding-top: 20px;
-            text-shadow: 1px 0 50px rgb(13, 127, 233);
-
-
-        }
-
+       
         .swiper {
-            width: 350px;
-            height: 400px;
+            width: 310px;
+            height: 360px;
             border-radius: 30px;
             padding: 50px;
-            box-shadow: rgba(136, 165, 191, 0.062) 6px 2px 16px 0px, rgba(255, 255, 255, 0.034) -6px -2px 16px 0px;
-            background: #ffffff18;
-            backdrop-filter: blur(10px);
 
         }
 
         .swiper-slide {
             background-position: center;
             background-size: cover;
-            width: 350px;
-            height: 400px;
+            width: 310px;
+            height: 360px;
             overflow: hidden;
             border-radius: 30px;
             background: #ffffff;
@@ -80,6 +73,16 @@
 
     }
 }
+
+.education-section{
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+    margin: 10px;
+    display: flex;
+    
+}
+
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {

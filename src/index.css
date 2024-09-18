@@ -32,3 +32,32 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
+body {
+  --sb-track-color: #303c42;
+  --sb-thumb-color: #6BAF8D;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 31px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 31px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
