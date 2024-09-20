@@ -1,0 +1,26 @@
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: wheat;
+
+    &__con_one {
+        
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        background: none;
+
+        &:hover .body__con_one__con_two {
+            width: 100%;
+        }
+
+        &__con_two {
+            width: 0px; /* Default width */
+            height: 100%;
+            background-color: rgb(0, 0, 255);
+            transition: width 1s ease; /* Smooth transition */
+        }
+    }
+}
