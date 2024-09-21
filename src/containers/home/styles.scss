@@ -34,11 +34,11 @@
             margin-bottom: 100px;
 
             box-shadow:
-            rgba(0, 0, 0, 0.25) 0px 54px 55px,   
-            rgba(0, 0, 0, 0.12) 0px -12px 30px,  
-            rgba(0, 0, 0, 0.12) 0px 4px 6px,     
-            rgba(0, 0, 0, 0.17) 0px 12px 13px,   
-            rgba(0, 0, 0, 0.09) 0px -3px 5px,    
+                rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px,
                 var(--yellow-theme-main-color) 0px 2px 50px 5px;
 
 
@@ -67,7 +67,7 @@
 
 
             &__text {
-           
+
                 h1 {
                     color: var(--yellow-theme-main-color);
 
@@ -87,13 +87,13 @@
                 }
             }
 
-         &__btn{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 100%;
-          
-         }
+            &__btn {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+
+            }
 
 
 
@@ -106,7 +106,7 @@
             width: fit-content;
             display: flex;
             flex-wrap: wrap-reverse;
-    
+
 
             a {
                 position: relative;
@@ -140,6 +140,16 @@
 
                 &:hover::after {
                     border: 3px solid #ffffff;
+                    box-shadow:
+                        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                        rgba(0, 0, 0, 0.09) 0px -3px 5px,
+                        var(--yellow-theme-main-color) 0px 0px 5px 5px;
+
+                        transform: scale(1.1); 
+
                 }
             }
 
@@ -156,6 +166,7 @@
                     border: 2px solid (--yellow-theme-main-color);
                     color: #ffffff;
 
+
                 }
             }
         }
@@ -169,7 +180,7 @@
         button {
             cursor: pointer;
             width: 200px;
-            padding: 10px 10px ;
+            padding: 10px 10px;
             font-size: 2rem;
             background: transparent;
             color: var(--yellow-theme-main-color);
