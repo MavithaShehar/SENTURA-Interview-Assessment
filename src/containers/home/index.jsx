@@ -4,15 +4,9 @@ import { Animate } from "react-simple-animate";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import './styles.scss';
 import logo from "../../assets/imgs/cover_img.jpeg";
-import Aos from "aos";
-import 'aos/dist/aos.css';
 
 const Home = () => {
     const navigate = useNavigate();
-
-    useEffect(() => {
-        Aos.init({ duration: 1500 });
-    }, []);
 
     const handelNavigateToContactMe = () => {
         navigate('/contact');
