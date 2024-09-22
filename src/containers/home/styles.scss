@@ -320,7 +320,7 @@
                 width: 32vw;
                 height: 32vw;
 
-               
+
                 img {
                     width: 32vw;
                     height: 32vw;
@@ -394,8 +394,21 @@
 
             &__my-image {
                 width: 25vw;
+                height: 25vw;
                 top: 60px;
-               
+                box-shadow:
+                    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0px -3px 5px,
+                    var(--yellow-theme-main-color) 0px 2px 30px 5px;
+
+                immg {
+                    width: 25vw;
+                    height: 25vw;
+                }
+
             }
 
             &__text-wrapper {
@@ -436,7 +449,7 @@
             &__contact {
 
                 a {
-                   
+
                     margin: 15px;
                     margin-top: 25px;
 
@@ -478,10 +491,14 @@
 
             &__my-image {
                 width: 25vw;
+                height: 25vw;
                 top: 40px;
                 margin-bottom: 0px;
-               
 
+                img {
+                    width: 25vw;
+                    height: 25vw;
+                }
 
             }
 
@@ -524,7 +541,7 @@
             &__contact {
 
                 a {
-                   
+
                     margin: 15px;
                     margin-top: 25px;
 
@@ -535,16 +552,17 @@
         }
 
         &__contact-me {
-                display: flex;
-                justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
+
             button {
                 cursor: pointer;
                 width: 150px;
                 padding: 10px 10px;
                 font-size: 15px;
                 margin-top: 40px;
-                
-                
+
+
 
             }
         }
@@ -558,7 +576,7 @@
 
         display: flex;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;
 
         &__resose-wrapper {
             width: 100%;
@@ -574,11 +592,11 @@
                 height: 45vw;
                 top: 50px;
                 margin-bottom: 40px;
-               
 
-                img{
-                    width: 200px;
-                    height: 200px;  
+
+                img {
+                    width: 45vw;
+                    height: 45vw;
                 }
 
             }
@@ -622,7 +640,7 @@
             &__contact {
 
                 a {
-                   
+
                     margin: 15px;
                     margin-top: 25px;
 
@@ -633,16 +651,17 @@
         }
 
         &__contact-me {
-                display: flex;
-                justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
+
             button {
                 cursor: pointer;
                 width: 110px;
                 padding: 5px 5px;
                 font-size: 13px;
                 margin-top: 40px;
-                
-                
+
+
 
             }
         }
