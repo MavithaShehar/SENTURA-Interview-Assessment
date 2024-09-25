@@ -1,5 +1,5 @@
 import './styles.scss';
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-flip';
@@ -19,6 +19,7 @@ import img07 from "../../assets/imgs/img07.jpeg";
 
 import Education from '../../componets/education & experience/education';
 import Experience from '../../componets/education & experience/experience';
+
 const About = () => {
     const slides = [
         { img: img01, topic: "Nature 1" },
@@ -31,20 +32,20 @@ const About = () => {
     ];
 
     return (
-        <main id='about-me-section'>
+        <main id='about-me-section' className="container">
+            {/* Header */}
             <Headrs headerName="About Me" />
-
-            <div className="about-me">
-
-                <div className="about-me__info">
-
+  
+            <div className="about-me row">
+                {/* About Me Info Section */}
+                <div className="about-me__info col-lg-6 col-md-12">
                     <Animate
                         play
                         duration={0.8}
                         start={{ transform: "translateX(-550px)" }}
                         end={{ transform: "translateX(0px)" }}
                     >
-                        <h1>
+                        <h1 className="mt-4">
                             Hello, I am Shehar Mavitha Kaluarachchi <br />
                             I began my Software Engineer life in 2022. <br />
                             I've spent most of my waking hours for the last few years designing, <br />
@@ -54,11 +55,10 @@ const About = () => {
                             I enjoy every step of the design process <br /> from discussion to collaboration.
                         </h1>
                     </Animate>
-
                 </div>
 
-                <div className="about-me__gallery">
-
+                {/* Gallery Section */}
+                <div className="about-me__gallery col-lg-6 col-md-12">
                     <Swiper
                         effect={'flip'}
                         grabCursor={true}
@@ -66,24 +66,23 @@ const About = () => {
                         navigation={true}
                         modules={[EffectFlip, Pagination, Navigation]}
                         className="mySwiper"
-
                     >
                         {slides.map((slide, index) => (
                             <SwiperSlide key={index}>
-                                <img src={slide.img} alt={`Slide ${index + 1}`} />
+                                <img src={slide.img} alt={`Slide ${index + 1}`} className="img-fluid" />
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 </div>
             </div>
 
-            <div className='education-section' >
-                 <Education data-aos="zoom-in"/>
-                 <Experience/>           
+            {/* Education & Experience Section */}
+            <div className='education-section ' >
+                 <Education data-aos="zoom-in" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 "/>
+                 <Experience class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 "/>
             </div>
-
         </main>
     );
-}
+} 
 
 export default About;
