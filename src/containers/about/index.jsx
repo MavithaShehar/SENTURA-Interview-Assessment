@@ -38,27 +38,22 @@ const About = () => {
   
             <div className="about-me row">
                 {/* About Me Info Section */}
-                <div className="about-me__info col-lg-6 col-md-12">
-                    <Animate
-                        play
-                        duration={0.8}
-                        start={{ transform: "translateX(-550px)" }}
-                        end={{ transform: "translateX(0px)" }}
-                    >
+                <div className="about-me__info">
+                    
                         <h1 className="mt-4">
                             Hello, I am Shehar Mavitha Kaluarachchi <br />
                             I began my Software Engineer life in 2022. <br />
-                            I've spent most of my waking hours for the last few years designing, <br />
+                            I've spent most waking hours designing for the last years, <br />
                             programming, and operating websites. <br />
                             I have acquired the skills and knowledge necessary to <br />
                             make your project a success. <br />
                             I enjoy every step of the design process <br /> from discussion to collaboration.
                         </h1>
-                    </Animate>
+                    
                 </div>
 
                 {/* Gallery Section */}
-                <div className="about-me__gallery col-lg-6 col-md-12">
+                <div className="about-me__gallery">
                     <Swiper
                         effect={'flip'}
                         grabCursor={true}
@@ -78,8 +73,8 @@ const About = () => {
 
             {/* Education & Experience Section */}
             <div className='education-section ' >
-                 <Education data-aos="zoom-in" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 "/>
-                 <Experience class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 "/>
+                 <Education data-aos="zoom-in"/>
+                 <Experience />
             </div>
         </main>
     );
