@@ -118,3 +118,135 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 1270px) and (min-width: 1100px) {
+
+
+    .about-me {
+        
+    
+        &__info {
+            
+    
+            h1 {
+                font-size: 20px;
+                font-weight: 300;
+                text-shadow:
+                    1px 1px 2px black,
+                    0 0 2em blue;
+                font-family: "Nunito", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+    
+    
+            }
+        }
+    
+       
+    }
+
+}
+
+@media (max-width: 1099px) and (min-width: 800px) {
+
+
+    .about-me {
+    
+        &__info {
+            width: 60%;
+            margin-left: 50px;
+    
+            h1 {
+                text-align: start;
+                font-size: 18px;
+                font-weight: 200;
+            
+            }
+        }
+    
+        &__gallery {
+            width: 40%;
+            margin-left: 30px;
+           
+    
+           
+            .swiper {
+                width: 210px;
+                height: 250px;
+                
+    
+            }
+    
+            .swiper-slide {
+                
+                width: 310px;
+                height: 250px;
+                overflow: hidden;
+                
+            }
+    
+            .swiper-slide img {
+               
+                border-radius: 30px;
+                transition: transform 0.3s ease;
+    
+    
+            }
+    
+            
+        }
+    }
+
+}
+
+@media (max-width: 799px) and (min-width: 300px) {
+
+
+    .about-me {
+        flex-direction: column-reverse;
+        &__info {
+            width: 100%;
+          
+    
+            h1 {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 200;
+                   
+            }
+        }
+    
+        &__gallery {
+            width: 100%;
+            margin-bottom: 25px;
+           
+           
+           
+    
+           
+            .swiper {
+                width: 250px;
+                height: 280px;
+                padding: 30px 50px 40px 50px ;
+            
+            }
+    
+            .swiper-slide {
+                
+                width: 350px;
+                height: 280px;
+               
+                
+            }
+    
+            
+    
+            
+        }
+    }
+
+}
+
