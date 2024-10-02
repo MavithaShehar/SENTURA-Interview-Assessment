@@ -1,0 +1,86 @@
+.butn {
+    button {
+        cursor: pointer;
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--yellow-theme-main-color);
+        border: 1.5px solid var(--yellow-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
+        margin-top: 40px;
+
+        &:hover {
+            background: var(--yellow-theme-main-color);
+            color: #000000;
+        }
+    }
+}
+
+
+@media (max-width: 999px) and (min-width: 855px) {
+    .butn {
+
+        button {
+            cursor: pointer;
+            width: 170px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+//mobile size
+
+@media (max-width: 856px) and (min-width: 760px) {
+    .butn {
+        button {
+            cursor: pointer;
+            width: 150px;
+            padding: 10px 10px;
+            font-size: 15px;
+            margin-top: 40px;
+
+
+        }
+    }
+
+}
+
+
+
+@media (max-width: 760px) and (min-width: 550px) {
+    .butn {
+        button {
+            cursor: pointer;
+            width: 150px;
+            padding: 10px 10px;
+            font-size: 15px;
+            margin-top: 40px;
+
+
+
+        }
+    }
+
+}
+
+
+
+@media (max-width: 550px) and (min-width: 200px) {
+    .butn {
+        button {
+            cursor: pointer;
+            width: 110px;
+            padding: 5px 5px;
+            font-size: 13px;
+            margin-top: 40px;
+
+
+
+        }
+    }
+
+}

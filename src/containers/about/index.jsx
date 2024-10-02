@@ -5,8 +5,13 @@ import 'swiper/css';
 import 'swiper/css/effect-flip';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Headrs from '../../componets/headers/index';
+import Headers from '../../componets/headers/index';  // Assuming the correct name is 'Headers'
 import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+
+import Aos from "aos"; 
+import "aos/dist/aos.css"; 
+
+import Button from "../../componets/buttons/index";
 
 import img01 from "../../assets/imgs/img01.jpg";
 import img02 from "../../assets/imgs/img02.jpeg";
@@ -26,13 +31,17 @@ const About = () => {
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
-           
         };
 
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
+    }, []);
+
+    // Initialize AOS on component mount
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
     }, []);
 
     const slides = [
@@ -48,11 +57,11 @@ const About = () => {
     return (
         <main id='about-me-section' className="container">
             {/* Header */}
-            <Headrs headerName="About Me" />
+            <Headers headerName="About Me" /> {/* Corrected component name */}
 
             <div className="about-me row">
                 {/* About Me Info Section */}
-                <div className="about-me__info">
+                <div className="about-me__info" data-aos="zoom-in-up">
                     <h1 className="mt-4">
                         Hello, I am Shehar Mavitha Kaluarachchi <br />
                         I began my Software Engineer life in 2022. <br />
@@ -83,10 +92,10 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='ed-ex-btn'>
-                {/* Toggle Buttons */}
-                <button onClick={() => setActiveSection('education')}>Education</button>
-                <button onClick={() => setActiveSection('experience')}>Experience</button>
+            <div className='ed-ex-btn' data-aos="fade-up">
+                {/* AOS-enabled buttons */}
+                <Button onClick={() => setActiveSection('education')} name='Education' />
+                <Button onClick={() => setActiveSection('experience')} name='Experience' />
             </div>
 
             <div className='education-section'>

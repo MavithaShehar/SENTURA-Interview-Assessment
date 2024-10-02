@@ -94,11 +94,10 @@
          margin: auto;
 
          margin-top: 50px;   
-         border: 2px solid red ;
          width: 80%;
          height: 50px; 
-         display: block;
-         padding: 0 100px 0 100px 0;
+        
+         
         
          
          display:flex;
@@ -109,8 +108,9 @@
          button{
             width: fit-content;
             height: fit-content;
-            padding: 15px;
+            padding: 10px;
             margin: 0px 100px 0px 100px;
+            font-size: 15px;
          }
          
         }
@@ -291,3 +291,19 @@
 
 }
 
+@media (max-width: 500px) and (min-width: 300px) {
+
+    #about-me-section{
+
+        .ed-ex-btn{
+           
+         button{
+            
+            margin: 0 40px 0 40px;
+         }  
+        }
+    }
+    
+
+
+}
