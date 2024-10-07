@@ -5,7 +5,7 @@ import Contact from './containers/contact';
 import Skills from './containers/skills';
 import About from './containers/about';
 import Navbar from './componets/navBar';
-import Test from './containers/test';
+import Project from './containers/project';
 import { useEffect } from "react";
 
 
@@ -30,7 +30,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/skills' element={<Skills />} />
-          <Route path='/test' element={<Test />} sty  />
+          <Route path='/project' element={<Project />} />
         </Routes>
       </div>
 
