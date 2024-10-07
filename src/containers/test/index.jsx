@@ -1,43 +1,83 @@
-import React from 'react'
+import React from 'react';
 import './styles.scss';
-import Accordion from 'react-bootstrap/Accordion';
+import Button from "../../componets/buttons/index";
+import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
-function Test() {
+import expo from "../../assets/imgs/expo.png";
+import midwife from "../../assets/imgs/midwife.png";
+import pos from "../../assets/imgs/pos.png";
+import shoe from "../../assets/imgs/shoe.png";
+import portfolio from "../../assets/imgs/portfolio.png";
+import img06 from "../../assets/imgs/img06.jpeg";
+import img07 from "../../assets/imgs/img07.jpeg";
+
+function Projects() {
+  const projectData = [
+    {
+      title: "IKMAN.LK CLONE",
+      description: " A mobile e-commerce application featuring a shopping cart . Developed with React Native and Expo, utilizing CSS for responsive and engaging design.",
+      image: expo,
+      linke: "https://github.com/MavithaShehar/ikman-clone"
+    },
+    {
+      title: "MID WIFE MANAGEMENT SYSTEM",
+      description: "A comprehensive management system for midwives featuring user profiles, appointment scheduling, and patient management. Built using JavaFX for the front end and MySQL for data storage.",
+      image: midwife,
+      linke: "https://github.com/MavithaShehar/1st_sem_last_project_REBUILD_with_Layer_Architect"
+    },
+    {
+      title: "PORTFOLIO WEBSITE",
+      description: "A dynamic portfolio website to showcase projects, skills, and experience, built with React for interactivity, SCSS for styling, and Mail.js for email functionality.",
+      image: portfolio,
+      linke: "https://github.com/MavithaShehar/portfolio"
+    }
+    ,
+    {
+      title: "SKY SHOE",
+      description: "An e-commerce platform for footwear built with JavaScript, HTML, CSS, and Bootstrap for the frontend, and Spring Boot with MySQL for the backend. It utilizes JWT for secure authentication.",
+      image: shoe,
+      linke: "https://github.com/MavithaShehar/SKY-SHOE-shope"
+    }
+    ,
+    {
+      title: "S M K FOOD CITY",
+      description: "A restaurant management system built with Java EE for the backend and HTML, CSS, JavaScript, Bootstrap, and AJAX for a responsive frontend.",
+      image: pos,
+      linke: "https://github.com/MavithaShehar/internet_technology_Assignment_11-Back_End-with-Java_EE"
+    }
+
+
+  ];
+
   return (
-    <div className='body'>
-
-<Accordion defaultActiveKey={['0']} alwaysOpen>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-     <div className='body__con_one'>
-      
-     <div className='body__con_one__con_two'></div>
-     </div>
+    <div className='project-section'>
+      {projectData.map((project, index) => (
+        <div className='project-section__card__card-body' key={index}>
+          <div
+            className='project-section__card__card-body__img'
+            style={{
+              backgroundImage: `url(${project.image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              overflow: 'hidden',
+              height: "80%"
+            }}
+          ></div>
+          <div className='project-section__card__card-body__info-body'>
+            <div className='project-section__card__card-body__info-body__info'>
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+            </div>
+            <div className='project-section__card__card-body__info-body__butn'>
+              <a href={project.linke} target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Test
+export default Projects;

@@ -20,6 +20,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 80px;
+            font-size: 50px;
 
             &__con {
                 display: flex;
@@ -38,4 +39,87 @@
             }
         }
     }
+}
+
+@media (max-width: 750px) and (min-width: 460px) {
+    .skills-section {
+        width: fit-content;
+        height: fit-content;
+        display: inline;
+
+        &__items {
+            position: relative !important;
+           
+
+            &__lang,
+
+            &__frem,
+            &__lib,
+            &__db,
+            &__tools {
+
+                gap: 40px;
+               
+                position: relative;
+                display: flex;
+               
+                align-items: center;
+                
+
+                font-size: 40px;
+
+
+                &__con {
+                    margin-bottom: 30px;
+                    font-size: 40px;
+                    gap: 10px;
+
+
+
+                    h1 {
+
+                        font-size: 12px;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 459px) and (min-width: 200px) {
+    .skills-section {
+        
+
+        &__items {
+          
+            &__lang,
+
+            &__frem,
+            &__lib,
+            &__db,
+            &__tools {
+
+                gap: 15px;
+                font-size: 30px;
+
+
+                &__con {
+                
+                    h1 {
+
+                        font-size: 13px;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
 }

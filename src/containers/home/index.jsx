@@ -14,6 +14,14 @@ const Home = () => {
         Aos.init({ duration: 1000 });
     }, []);
 
+    const handleDownloadCV = () => {
+       
+        const link = document.createElement('a');
+        link.href = '/cv.pdf';
+        link.download = 'Shehar Mavitha.pdf'; 
+        link.click();
+    };
+
     const navigate = useNavigate();
 
     const handleNavigateToContactMe = () => {
@@ -51,7 +59,7 @@ const Home = () => {
                     
                     <div className="home__resose-wrapper__text-wrapper__btn">
                         <div className="home__contact-me" data-aos="fade-up">
-                            <Button  onClick={handleNavigateToContactMe} name="Download CV" />
+                        <Button onClick={handleDownloadCV} name="Download CV" />
                         </div>
 
                         
