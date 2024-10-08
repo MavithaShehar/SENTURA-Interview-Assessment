@@ -3,6 +3,8 @@ import './styles.scss';
 import Button from "../../componets/buttons/index";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
+import Headrs from '../../componets/headers/index';
+
 import expo from "../../assets/imgs/expo.png";
 import midwife from "../../assets/imgs/midwife.png";
 import pos from "../../assets/imgs/pos.png";
@@ -50,6 +52,9 @@ function Projects() {
   ];
 
   return (
+    
+    <div>
+       <Headrs headerName="My Projects" />
     <div className='project-section'>
       {projectData.map((project, index) => (
         <div className='project-section__card__card-body' key={index}>
@@ -76,6 +81,7 @@ function Projects() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
